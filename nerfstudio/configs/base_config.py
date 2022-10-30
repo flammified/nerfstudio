@@ -96,7 +96,7 @@ class LocalWriterConfig(InstantiateConfig):
         writer.EventName.TEST_RAYS_PER_SEC,
     )
     """specifies which stats will be logged/printed to terminal"""
-    max_log_size: int = 10
+    max_log_size: int = 20
     """maximum number of rows to print before wrapping. if 0, will print everything."""
 
     def setup(self, banner_messages: Optional[List[str]] = None, **kwargs) -> Any:

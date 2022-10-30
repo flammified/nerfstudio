@@ -36,6 +36,9 @@ from nerfstudio.data.dataparsers.friends_dataparser import FriendsDataParserConf
 from nerfstudio.data.dataparsers.instant_ngp_dataparser import (
     InstantNGPDataParserConfig,
 )
+from nerfstudio.data.dataparsers.instant_ngp_with_depths_dataparser import (
+    InstantNGPWithDepthsDataParserConfig,
+)
 from nerfstudio.data.dataparsers.nerfstudio_dataparser import NerfstudioDataParserConfig
 from nerfstudio.data.dataparsers.record3d_dataparser import Record3DDataParserConfig
 from nerfstudio.data.pixel_samplers import PixelSampler
@@ -56,6 +59,7 @@ AnnotatedDataParserUnion = tyro.conf.OmitSubcommandPrefixes[  # Omit prefixes of
             "blender-data": BlenderDataParserConfig(),
             "friends-data": FriendsDataParserConfig(),
             "instant-ngp-data": InstantNGPDataParserConfig(),
+            "instant-ngp-with-depths-data": InstantNGPWithDepthsDataParserConfig(),
             "record3d-data": Record3DDataParserConfig(),
         },
         prefix_names=False,  # Omit prefixes in subcommands themselves.

@@ -95,6 +95,8 @@ class NerfactoModelConfig(ModelConfig):
     """Max num iterations for the annealing function."""
     use_single_jitter: bool = True
     """Whether use single jitter or not for the proposal networks."""
+    use_depths: bool = False
+    """Use loaded depth maps as regularization"""
 
 
 class NerfactoModel(Model):

@@ -50,7 +50,7 @@ class EventName(enum.Enum):
     ETA = "ETA (time)"
     TRAIN_RAYS_PER_SEC = "Train Rays / Sec"
     TEST_RAYS_PER_SEC = "Test Rays / Sec"
-    VIS_RAYS_PER_SEC = "Vis Rays / Sec"
+    VIS_RAYS_PER_SEC = "YEET Rays / Sec"
     CURR_TEST_PSNR = "Test PSNR"
 
 
